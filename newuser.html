@@ -1,0 +1,59 @@
+<html>
+	<h1>New User</h1>
+	<body>
+			<form action="/addnewuser" method="POST">				
+				<table>
+					<tr>
+						<td>User name</td>
+						<td><input type="text" name="username"></td>
+					</tr>
+					<tr>
+						<td>Password</td>
+						<td><input type="password" name="password"></td>
+						<td>
+						<table>
+							<tr>
+								<td><font size="1" color="red">Password cannot be less than 8 characters</font></td>
+							</tr>
+							<tr>
+								<td><font size="1" color="red">Password cannot be more than 128 characters</font></td>
+							</tr>
+							<tr>
+								<td><font size="1" color="red">Password should contain 1 lower case ( a-z )</font></td>
+							</tr>
+							<tr>
+								<td><font size="1" color="red">Password should contain 1 uppercase ( A-Z )</font></td>
+							</tr>
+							<tr>
+								<td><font size="1" color="red">Password should contain 1 numeric ( 0-9 )</font></td>
+							</tr>
+							<tr>
+								<td><font size="1" color="red">Password should contain 1 special character ( !@#\$%\^&\* )</font></td>
+							</tr>																								
+						</table>		
+						</td>							
+					</tr>					
+					<tr>
+						<td>First name</td>
+						<td><input type="text" name="firstname"></td>
+					</tr>			
+					<tr>
+						<td>Last name</td>
+						<td><input type="text" name="lastname"></td>
+					</tr>													
+					<tr>
+						<td>Address</td>
+						<td><input type="email" name="address"></td>
+					</tr>													
+					<tr>
+						<td></td>					
+						<td><input type="submit" value="Add user"></td>
+					</tr>										
+				</table>
+			</form>
+			
+			<a href='/'>Home</a>
+			
+			</br></br>
+	</body>
+</html>
